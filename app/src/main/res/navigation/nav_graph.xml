@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/NFLTeamListFragment">
+
+    <fragment
+        android:id="@+id/NFLTeamListFragment"
+        android:name="com.example.nflteams.NFLTeamListFragment"
+        android:label="NFLTeamListFragment"
+        tools:layout="@layout/fragment_team_list">
+        <action
+            android:id="@+id/show_team_detail"
+            app:destination="@id/NFLTeamDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NFLTeamDetailFragment"
+        android:name="com.example.nflteams.NFLTeamDetailFragment"
+        android:label="NFLTeamDetailFragment"
+        tools:layout="@layout/fragment_team_detail">
+        <argument
+            android:name="teamId"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NFLTeams" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="actionBarStyle">@style/Custom.ActionBar</item>
+    </style>
+
+    <style name="Theme.NFLTeams" parent="Base.Theme.NFLTeams" />
+    <style name="Custom.ActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">
+        <item name="backgroundColor">#6200ee</item>
+        <item name="titleTextStyle" >
+            @style/myTheme.ActionBar.Text
+        </item>
+    </style>
+    <style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFF</item>
+    </style>
+</resources>
